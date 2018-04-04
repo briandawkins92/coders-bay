@@ -2,21 +2,10 @@
 // Make sure to match the configuration to the script version number in the HTML
 // (Ex. 3.0 != 3.7.0)
 
-  var config = {
-    apiKey: "AIzaSyD8iCtJUbuwXNNxk1uAX61_zWtasI6zD00",
-    authDomain: "database-coders-bay.firebaseapp.com",
-    databaseURL: "https://database-coders-bay.firebaseio.com",
-    projectId: "database-coders-bay",
-    storageBucket: "database-coders-bay.appspot.com",
-    messagingSenderId: "1061431252080"
-  };
-  firebase.initializeApp(config);
-
 
 // Assign the reference to the database to a variable named 'database'
 //var database = ...
 var database = firebase.database();
-
 
 // Initial Values
 var initialBid = 0;
@@ -28,10 +17,31 @@ var highBidder = initialBidder;
 
 //  At the page load and subsequent value changes, get a snapshot of the stored data.
 // This function allows you to update your page in real-time when the firebase database changes.
+$(document).ready(function(){
+    
 
+// Initialize Firebase
+var config = {
+    apiKey: "AIzaSyD8iCtJUbuwXNNxk1uAX61_zWtasI6zD00",
+    authDomain: "database-coders-bay.firebaseapp.com",
+    databaseURL: "https://database-coders-bay.firebaseio.com",
+    projectId: "database-coders-bay",
+    storageBucket: "database-coders-bay.appspot.com",
+    messagingSenderId: "1061431252080"
+};
+firebase.initializeApp(config);
+
+var database = firebase.database();
+
+database.ref().set({ 
+    highPrice: highPrice,
+    highBidder: highBidder
+});
 
 // If Firebase has a highPrice and highBidder stored (first case)
+if ( a === b) {
 
+}
 
 // Set the variables for highBidder/highPrice equal to the stored values in firebase.
 // highPrice = ...
@@ -85,3 +95,5 @@ var highBidder = initialBidder;
 // Change the HTML to reflect the new high price and bidder
 
 // Else tell user their bid was too low via alert
+
+});
