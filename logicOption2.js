@@ -2,8 +2,20 @@
 // Make sure to match the configuration to the script version number in the HTML
 // (Ex. 3.0 != 3.7.0)
 
+  var config = {
+    apiKey: "AIzaSyD8iCtJUbuwXNNxk1uAX61_zWtasI6zD00",
+    authDomain: "database-coders-bay.firebaseapp.com",
+    databaseURL: "https://database-coders-bay.firebaseio.com",
+    projectId: "database-coders-bay",
+    storageBucket: "database-coders-bay.appspot.com",
+    messagingSenderId: "1061431252080"
+  };
+  firebase.initializeApp(config);
+
+
 // Assign the reference to the database to a variable named 'database'
 //var database = ...
+var database = firebase.database();
 
 
 // Initial Values
