@@ -2,7 +2,10 @@
 // Make sure to match the configuration to the script version number in the HTML
 // (Ex. 3.0 != 3.7.0)
 
+<<<<<<< HEAD
   // Initialize Firebase
+=======
+>>>>>>> 5b809f33d8c2901861c00c4125164e9836d1ae9d
   var config = {
     apiKey: "AIzaSyD8iCtJUbuwXNNxk1uAX61_zWtasI6zD00",
     authDomain: "database-coders-bay.firebaseapp.com",
@@ -12,12 +15,16 @@
     messagingSenderId: "1061431252080"
   };
   firebase.initializeApp(config);
+<<<<<<< HEAD
   var database = firebase.database();
   console.log(database);
+=======
+>>>>>>> 5b809f33d8c2901861c00c4125164e9836d1ae9d
 
 
 // Assign the reference to the database to a variable named 'database'
 //var database = ...
+var database = firebase.database();
 
 
 // Initial Values
